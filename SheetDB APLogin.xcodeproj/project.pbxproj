@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDC2381D24EFF06C002DBD22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2381C24EFF06C002DBD22 /* AppDelegate.swift */; };
+		DDC2381F24EFF06C002DBD22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2381E24EFF06C002DBD22 /* SceneDelegate.swift */; };
+		DDC2382124EFF06C002DBD22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2382024EFF06C002DBD22 /* ViewController.swift */; };
+		DDC2382424EFF06C002DBD22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC2382224EFF06C002DBD22 /* Main.storyboard */; };
+		DDC2382624EFF07C002DBD22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC2382524EFF07C002DBD22 /* Assets.xcassets */; };
+		DDC2382924EFF07C002DBD22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC2382724EFF07C002DBD22 /* LaunchScreen.storyboard */; };
+		DDC2383424EFF07D002DBD22 /* SheetDB_APLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2383324EFF07D002DBD22 /* SheetDB_APLoginTests.swift */; };
+		DDC2383F24EFF07D002DBD22 /* SheetDB_APLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2383E24EFF07D002DBD22 /* SheetDB_APLoginUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDC2383024EFF07D002DBD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC2381124EFF06C002DBD22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDC2381824EFF06C002DBD22;
+			remoteInfo = "SheetDB APLogin";
+		};
+		DDC2383B24EFF07D002DBD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC2381124EFF06C002DBD22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDC2381824EFF06C002DBD22;
+			remoteInfo = "SheetDB APLogin";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDC2381924EFF06C002DBD22 /* SheetDB APLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SheetDB APLogin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC2381C24EFF06C002DBD22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDC2381E24EFF06C002DBD22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DDC2382024EFF06C002DBD22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDC2382324EFF06C002DBD22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDC2382524EFF07C002DBD22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDC2382824EFF07C002DBD22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDC2382A24EFF07C002DBD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDC2382F24EFF07D002DBD22 /* SheetDB APLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SheetDB APLoginTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC2383324EFF07D002DBD22 /* SheetDB_APLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetDB_APLoginTests.swift; sourceTree = "<group>"; };
+		DDC2383524EFF07D002DBD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDC2383A24EFF07D002DBD22 /* SheetDB APLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SheetDB APLoginUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC2383E24EFF07D002DBD22 /* SheetDB_APLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetDB_APLoginUITests.swift; sourceTree = "<group>"; };
+		DDC2384024EFF07D002DBD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDC2381624EFF06C002DBD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC2382C24EFF07D002DBD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC2383724EFF07D002DBD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDC2381024EFF06C002DBD22 = {
+			isa = PBXGroup;
+			children = (
+				DDC2381B24EFF06C002DBD22 /* SheetDB APLogin */,
+				DDC2383224EFF07D002DBD22 /* SheetDB APLoginTests */,
+				DDC2383D24EFF07D002DBD22 /* SheetDB APLoginUITests */,
+				DDC2381A24EFF06C002DBD22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDC2381A24EFF06C002DBD22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2381924EFF06C002DBD22 /* SheetDB APLogin.app */,
+				DDC2382F24EFF07D002DBD22 /* SheetDB APLoginTests.xctest */,
+				DDC2383A24EFF07D002DBD22 /* SheetDB APLoginUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDC2381B24EFF06C002DBD22 /* SheetDB APLogin */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2381C24EFF06C002DBD22 /* AppDelegate.swift */,
+				DDC2381E24EFF06C002DBD22 /* SceneDelegate.swift */,
+				DDC2382024EFF06C002DBD22 /* ViewController.swift */,
+				DDC2382224EFF06C002DBD22 /* Main.storyboard */,
+				DDC2382524EFF07C002DBD22 /* Assets.xcassets */,
+				DDC2382724EFF07C002DBD22 /* LaunchScreen.storyboard */,
+				DDC2382A24EFF07C002DBD22 /* Info.plist */,
+			);
+			path = "SheetDB APLogin";
+			sourceTree = "<group>";
+		};
+		DDC2383224EFF07D002DBD22 /* SheetDB APLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2383324EFF07D002DBD22 /* SheetDB_APLoginTests.swift */,
+				DDC2383524EFF07D002DBD22 /* Info.plist */,
+			);
+			path = "SheetDB APLoginTests";
+			sourceTree = "<group>";
+		};
+		DDC2383D24EFF07D002DBD22 /* SheetDB APLoginUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2383E24EFF07D002DBD22 /* SheetDB_APLoginUITests.swift */,
+				DDC2384024EFF07D002DBD22 /* Info.plist */,
+			);
+			path = "SheetDB APLoginUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDC2381824EFF06C002DBD22 /* SheetDB APLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC2384324EFF07D002DBD22 /* Build configuration list for PBXNativeTarget "SheetDB APLogin" */;
+			buildPhases = (
+				DDC2381524EFF06C002DBD22 /* Sources */,
+				DDC2381624EFF06C002DBD22 /* Frameworks */,
+				DDC2381724EFF06C002DBD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SheetDB APLogin";
+			productName = "SheetDB APLogin";
+			productReference = DDC2381924EFF06C002DBD22 /* SheetDB APLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDC2382E24EFF07D002DBD22 /* SheetDB APLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC2384624EFF07D002DBD22 /* Build configuration list for PBXNativeTarget "SheetDB APLoginTests" */;
+			buildPhases = (
+				DDC2382B24EFF07D002DBD22 /* Sources */,
+				DDC2382C24EFF07D002DBD22 /* Frameworks */,
+				DDC2382D24EFF07D002DBD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDC2383124EFF07D002DBD22 /* PBXTargetDependency */,
+			);
+			name = "SheetDB APLoginTests";
+			productName = "SheetDB APLoginTests";
+			productReference = DDC2382F24EFF07D002DBD22 /* SheetDB APLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDC2383924EFF07D002DBD22 /* SheetDB APLoginUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC2384924EFF07D002DBD22 /* Build configuration list for PBXNativeTarget "SheetDB APLoginUITests" */;
+			buildPhases = (
+				DDC2383624EFF07D002DBD22 /* Sources */,
+				DDC2383724EFF07D002DBD22 /* Frameworks */,
+				DDC2383824EFF07D002DBD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDC2383C24EFF07D002DBD22 /* PBXTargetDependency */,
+			);
+			name = "SheetDB APLoginUITests";
+			productName = "SheetDB APLoginUITests";
+			productReference = DDC2383A24EFF07D002DBD22 /* SheetDB APLoginUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDC2381124EFF06C002DBD22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					DDC2381824EFF06C002DBD22 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					DDC2382E24EFF07D002DBD22 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = DDC2381824EFF06C002DBD22;
+					};
+					DDC2383924EFF07D002DBD22 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = DDC2381824EFF06C002DBD22;
+					};
+				};
+			};
+			buildConfigurationList = DDC2381424EFF06C002DBD22 /* Build configuration list for PBXProject "SheetDB APLogin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDC2381024EFF06C002DBD22;
+			productRefGroup = DDC2381A24EFF06C002DBD22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDC2381824EFF06C002DBD22 /* SheetDB APLogin */,
+				DDC2382E24EFF07D002DBD22 /* SheetDB APLoginTests */,
+				DDC2383924EFF07D002DBD22 /* SheetDB APLoginUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDC2381724EFF06C002DBD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC2382924EFF07C002DBD22 /* LaunchScreen.storyboard in Resources */,
+				DDC2382624EFF07C002DBD22 /* Assets.xcassets in Resources */,
+				DDC2382424EFF06C002DBD22 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC2382D24EFF07D002DBD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC2383824EFF07D002DBD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDC2381524EFF06C002DBD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC2382124EFF06C002DBD22 /* ViewController.swift in Sources */,
+				DDC2381D24EFF06C002DBD22 /* AppDelegate.swift in Sources */,
+				DDC2381F24EFF06C002DBD22 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC2382B24EFF07D002DBD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC2383424EFF07D002DBD22 /* SheetDB_APLoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC2383624EFF07D002DBD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC2383F24EFF07D002DBD22 /* SheetDB_APLoginUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDC2383124EFF07D002DBD22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDC2381824EFF06C002DBD22 /* SheetDB APLogin */;
+			targetProxy = DDC2383024EFF07D002DBD22 /* PBXContainerItemProxy */;
+		};
+		DDC2383C24EFF07D002DBD22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDC2381824EFF06C002DBD22 /* SheetDB APLogin */;
+			targetProxy = DDC2383B24EFF07D002DBD22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDC2382224EFF06C002DBD22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC2382324EFF06C002DBD22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDC2382724EFF07C002DBD22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC2382824EFF07C002DBD22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDC2384124EFF07D002DBD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDC2384224EFF07D002DBD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDC2384424EFF07D002DBD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RN4KN4PWZ;
+				INFOPLIST_FILE = "SheetDB APLogin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tsunsintan.SheetDB-APLogin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDC2384524EFF07D002DBD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RN4KN4PWZ;
+				INFOPLIST_FILE = "SheetDB APLogin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tsunsintan.SheetDB-APLogin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDC2384724EFF07D002DBD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RN4KN4PWZ;
+				INFOPLIST_FILE = "SheetDB APLoginTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tsunsintan.SheetDB-APLoginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SheetDB APLogin.app/SheetDB APLogin";
+			};
+			name = Debug;
+		};
+		DDC2384824EFF07D002DBD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RN4KN4PWZ;
+				INFOPLIST_FILE = "SheetDB APLoginTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tsunsintan.SheetDB-APLoginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SheetDB APLogin.app/SheetDB APLogin";
+			};
+			name = Release;
+		};
+		DDC2384A24EFF07D002DBD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RN4KN4PWZ;
+				INFOPLIST_FILE = "SheetDB APLoginUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tsunsintan.SheetDB-APLoginUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SheetDB APLogin";
+			};
+			name = Debug;
+		};
+		DDC2384B24EFF07D002DBD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RN4KN4PWZ;
+				INFOPLIST_FILE = "SheetDB APLoginUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tsunsintan.SheetDB-APLoginUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SheetDB APLogin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDC2381424EFF06C002DBD22 /* Build configuration list for PBXProject "SheetDB APLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC2384124EFF07D002DBD22 /* Debug */,
+				DDC2384224EFF07D002DBD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC2384324EFF07D002DBD22 /* Build configuration list for PBXNativeTarget "SheetDB APLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC2384424EFF07D002DBD22 /* Debug */,
+				DDC2384524EFF07D002DBD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC2384624EFF07D002DBD22 /* Build configuration list for PBXNativeTarget "SheetDB APLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC2384724EFF07D002DBD22 /* Debug */,
+				DDC2384824EFF07D002DBD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC2384924EFF07D002DBD22 /* Build configuration list for PBXNativeTarget "SheetDB APLoginUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC2384A24EFF07D002DBD22 /* Debug */,
+				DDC2384B24EFF07D002DBD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDC2381124EFF06C002DBD22 /* Project object */;
+}
