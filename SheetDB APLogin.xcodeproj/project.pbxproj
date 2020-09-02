@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		DDC2381D24EFF06C002DBD22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2381C24EFF06C002DBD22 /* AppDelegate.swift */; };
 		DDC2381F24EFF06C002DBD22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2381E24EFF06C002DBD22 /* SceneDelegate.swift */; };
-		DDC2382124EFF06C002DBD22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2382024EFF06C002DBD22 /* ViewController.swift */; };
 		DDC2382424EFF06C002DBD22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC2382224EFF06C002DBD22 /* Main.storyboard */; };
 		DDC2382624EFF07C002DBD22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC2382524EFF07C002DBD22 /* Assets.xcassets */; };
 		DDC2382924EFF07C002DBD22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC2382724EFF07C002DBD22 /* LaunchScreen.storyboard */; };
 		DDC2383424EFF07D002DBD22 /* SheetDB_APLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2383324EFF07D002DBD22 /* SheetDB_APLoginTests.swift */; };
 		DDC2383F24EFF07D002DBD22 /* SheetDB_APLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2383E24EFF07D002DBD22 /* SheetDB_APLoginUITests.swift */; };
+		DDC2384D24EFF1E0002DBD22 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2384C24EFF1E0002DBD22 /* InformationViewController.swift */; };
+		DDC2384F24EFF206002DBD22 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2384E24EFF206002DBD22 /* LoginViewController.swift */; };
+		DDC2385124EFF924002DBD22 /* AccountSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2385024EFF924002DBD22 /* AccountSettingViewController.swift */; };
+		DDC2385324EFFBE2002DBD22 /* AccountPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2385224EFFBE2002DBD22 /* AccountPassword.swift */; };
+		DDFE49A724F0CAEE00B536B8 /* ChangeAPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE49A624F0CAEE00B536B8 /* ChangeAPViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD188A3624F7CE2900317BB8 /* SheetDB APLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SheetDB APLogin.entitlements"; sourceTree = "<group>"; };
 		DDC2381924EFF06C002DBD22 /* SheetDB APLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SheetDB APLogin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC2381C24EFF06C002DBD22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDC2381E24EFF06C002DBD22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DDC2382024EFF06C002DBD22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDC2382324EFF06C002DBD22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDC2382524EFF07C002DBD22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDC2382824EFF07C002DBD22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,11 @@
 		DDC2383A24EFF07D002DBD22 /* SheetDB APLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SheetDB APLoginUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC2383E24EFF07D002DBD22 /* SheetDB_APLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetDB_APLoginUITests.swift; sourceTree = "<group>"; };
 		DDC2384024EFF07D002DBD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDC2384C24EFF1E0002DBD22 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		DDC2384E24EFF206002DBD22 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DDC2385024EFF924002DBD22 /* AccountSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingViewController.swift; sourceTree = "<group>"; };
+		DDC2385224EFFBE2002DBD22 /* AccountPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPassword.swift; sourceTree = "<group>"; };
+		DDFE49A624F0CAEE00B536B8 /* ChangeAPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAPViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +108,15 @@
 		DDC2381B24EFF06C002DBD22 /* SheetDB APLogin */ = {
 			isa = PBXGroup;
 			children = (
+				DD188A3624F7CE2900317BB8 /* SheetDB APLogin.entitlements */,
 				DDC2381C24EFF06C002DBD22 /* AppDelegate.swift */,
 				DDC2381E24EFF06C002DBD22 /* SceneDelegate.swift */,
-				DDC2382024EFF06C002DBD22 /* ViewController.swift */,
 				DDC2382224EFF06C002DBD22 /* Main.storyboard */,
+				DDFE49A624F0CAEE00B536B8 /* ChangeAPViewController.swift */,
+				DDC2385024EFF924002DBD22 /* AccountSettingViewController.swift */,
+				DDC2384E24EFF206002DBD22 /* LoginViewController.swift */,
+				DDC2385224EFFBE2002DBD22 /* AccountPassword.swift */,
+				DDC2384C24EFF1E0002DBD22 /* InformationViewController.swift */,
 				DDC2382524EFF07C002DBD22 /* Assets.xcassets */,
 				DDC2382724EFF07C002DBD22 /* LaunchScreen.storyboard */,
 				DDC2382A24EFF07C002DBD22 /* Info.plist */,
@@ -258,9 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDC2382124EFF06C002DBD22 /* ViewController.swift in Sources */,
+				DDFE49A724F0CAEE00B536B8 /* ChangeAPViewController.swift in Sources */,
+				DDC2384F24EFF206002DBD22 /* LoginViewController.swift in Sources */,
 				DDC2381D24EFF06C002DBD22 /* AppDelegate.swift in Sources */,
+				DDC2385324EFFBE2002DBD22 /* AccountPassword.swift in Sources */,
 				DDC2381F24EFF06C002DBD22 /* SceneDelegate.swift in Sources */,
+				DDC2384D24EFF1E0002DBD22 /* InformationViewController.swift in Sources */,
+				DDC2385124EFF924002DBD22 /* AccountSettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,9 +454,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SheetDB APLogin/SheetDB APLogin.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8RN4KN4PWZ;
 				INFOPLIST_FILE = "SheetDB APLogin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,9 +475,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SheetDB APLogin/SheetDB APLogin.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8RN4KN4PWZ;
 				INFOPLIST_FILE = "SheetDB APLogin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

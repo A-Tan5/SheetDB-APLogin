@@ -1,24 +1,269 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EDy-6N-PDh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Information View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InformationViewController" customModule="SheetDB_APLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwR-Z3-7hj">
+                                <rect key="frame" x="177" y="493" width="61" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="登入"/>
+                                <connections>
+                                    <action selector="LogInOutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0fZ-tE-aIV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewu-hM-KGf">
+                                <rect key="frame" x="132" y="585" width="152" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="註冊新帳號"/>
+                                <connections>
+                                    <action selector="NewAcSetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zu2-kn-feC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="你好！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDB-Vm-SIp">
+                                <rect key="frame" x="20" y="265" width="374" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QMY-xH-gcE"/>
+                    <connections>
+                        <outlet property="GreetingLabel" destination="dDB-Vm-SIp" id="3vs-nR-69w"/>
+                        <outlet property="LogInOutOutlet" destination="xwR-Z3-7hj" id="CcM-wl-rTW"/>
+                        <outlet property="NewAcSetOutlet" destination="Ewu-hM-KGf" id="M4O-GU-Td9"/>
+                        <segue destination="ptx-5t-xi4" kind="show" identifier="LoginSegue" id="1HB-QJ-f8W"/>
+                        <segue destination="jt9-n1-vix" kind="show" identifier="SettingSegue" id="TuC-cV-kPP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="87.723214285714278"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="ohL-Zc-e9s">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="ptx-5t-xi4" customClass="LoginViewController" customModule="SheetDB_APLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UUg-7s-ISA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="帳號" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Db3-1y-9sx">
+                                <rect key="frame" x="73" y="262" width="263" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="AcDismissKeyboard:" destination="ptx-5t-xi4" eventType="editingDidEndOnExit" id="2C7-d8-dO5"/>
+                                    <action selector="accountTyped:" destination="ptx-5t-xi4" eventType="editingDidEnd" id="61A-Ky-92D"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密碼" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="52i-nu-866">
+                                <rect key="frame" x="73" y="340" width="263" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="PaDismissKeyboard:" destination="ptx-5t-xi4" eventType="editingDidEndOnExit" id="785-Ng-hCf"/>
+                                    <action selector="passwordTyped:" destination="ptx-5t-xi4" eventType="editingDidEnd" id="hff-7Z-4RM"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="重複密碼" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Hy-pJ-2SZ">
+                                <rect key="frame" x="73" y="420" width="263" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="RePaDismissKeyboard:" destination="ptx-5t-xi4" eventType="editingDidEndOnExit" id="unj-RY-84R"/>
+                                    <action selector="rePasswordTyped:" destination="ptx-5t-xi4" eventType="editingDidEnd" id="cr5-Yb-tzu"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLM-UN-gdL">
+                                <rect key="frame" x="174" y="569" width="61" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="完成"/>
+                                <connections>
+                                    <action selector="doneButton:" destination="ptx-5t-xi4" eventType="touchUpInside" id="bxi-Hh-zpU"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名字" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIr-ML-65S">
+                                <rect key="frame" x="73" y="493" width="263" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="NewNameDismissKeyboard:" destination="ptx-5t-xi4" eventType="editingDidEndOnExit" id="Bg3-fW-LvX"/>
+                                    <action selector="newNameTyped:" destination="ptx-5t-xi4" eventType="editingDidEnd" id="AlO-aT-xjk"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y6S-0Z-9Po"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rWk-gU-Uc5"/>
+                    <connections>
+                        <outlet property="AcTextField" destination="Db3-1y-9sx" id="27W-LU-qGk"/>
+                        <outlet property="DoneOutlet" destination="eLM-UN-gdL" id="ha8-n1-FSw"/>
+                        <outlet property="NewNameTextField" destination="cIr-ML-65S" id="Sc9-aE-T3U"/>
+                        <outlet property="PaTextField" destination="52i-nu-866" id="Sop-Fe-bcp"/>
+                        <outlet property="RePaTextField" destination="5Hy-pJ-2SZ" id="tVH-ok-eQw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gof-6m-beW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700.0000000000002" y="-214.28571428571428"/>
+        </scene>
+        <!--Account Setting View Controller-->
+        <scene sceneID="Dn4-ZO-NhT">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="jt9-n1-vix" customClass="AccountSettingViewController" customModule="SheetDB_APLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rnb-po-xyY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYY-Oi-y1X">
+                                <rect key="frame" x="146" y="424" width="122" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="更改密碼"/>
+                                <connections>
+                                    <action selector="passwordChange:" destination="jt9-n1-vix" eventType="touchUpInside" id="8nG-C1-IDv"/>
+                                    <segue destination="OKs-tW-eAy" kind="show" id="9dN-tE-KqL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CC-O7-MyE">
+                                <rect key="frame" x="146" y="534" width="122" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="刪除帳號"/>
+                                <connections>
+                                    <action selector="accountDelete:" destination="jt9-n1-vix" eventType="touchUpInside" id="eyw-KU-Tle"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYk-m7-eHS">
+                                <rect key="frame" x="146" y="323" width="122" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="更改帳號"/>
+                                <connections>
+                                    <action selector="accountChange:" destination="jt9-n1-vix" eventType="touchUpInside" id="vwU-ax-IRg"/>
+                                    <segue destination="OKs-tW-eAy" kind="show" id="UUo-f3-XRC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="spo-Mn-p7L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MJq-YJ-UAK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVn-4h-O1i" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700.0000000000002" y="574.55357142857144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fL4-7X-sht">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EDy-6N-PDh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lys-eP-n01">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hqg-4u-o76"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLm-Zg-dUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20.289855072463769" y="87.723214285714278"/>
+        </scene>
+        <!--ChangeAP View Controller-->
+        <scene sceneID="7ab-eg-ILS">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="OKs-tW-eAy" customClass="ChangeAPViewController" customModule="SheetDB_APLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5mQ-LM-eAU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="舊密碼" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b3N-Pd-mcw">
+                                <rect key="frame" x="73" y="262" width="263" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="OldInfoDismissKeyboard:" destination="OKs-tW-eAy" eventType="editingDidEndOnExit" id="8xg-c1-VJX"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="新密碼" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mDD-oH-gz5">
+                                <rect key="frame" x="73" y="340" width="263" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="NewInfoDismissKeyboard:" destination="OKs-tW-eAy" eventType="editingDidEndOnExit" id="Xol-Kf-FXT"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="重複新密碼" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KSV-6P-aUd">
+                                <rect key="frame" x="73" y="420" width="263" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="ReNewInfoDismissKeyboard:" destination="OKs-tW-eAy" eventType="editingDidEndOnExit" id="aLG-Td-VFe"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3po-Ns-Dub">
+                                <rect key="frame" x="174" y="569" width="61" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="完成"/>
+                                <connections>
+                                    <action selector="donePressed:" destination="OKs-tW-eAy" eventType="touchUpInside" id="okZ-dM-sxN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kEy-Wh-anT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yqs-kS-CP0"/>
+                    <connections>
+                        <outlet property="NewInfoOutlet" destination="mDD-oH-gz5" id="qzN-Yk-DMN"/>
+                        <outlet property="OldInfoOutlet" destination="b3N-Pd-mcw" id="7RH-YV-Bqf"/>
+                        <outlet property="ReNewInfoOutlet" destination="KSV-6P-aUd" id="H86-sQ-7ah"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1sp-EV-qmW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2768" y="575"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UUo-f3-XRC"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
