@@ -38,6 +38,8 @@ class LoginViewController: UIViewController {
         PaTextField.placeholder = isForLogin ? "密碼" : "新密碼"
         RePaTextField.isHidden = isForLogin ? true : false
         NewNameTextField.isHidden = isForLogin ? true : false
+        PaTextField.isSecureTextEntry = true
+        RePaTextField.isSecureTextEntry = true
     }
     
     @IBAction func accountTyped(_ sender: UITextField) {

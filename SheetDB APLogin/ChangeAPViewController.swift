@@ -36,6 +36,11 @@ class ChangeAPViewController: UIViewController {
         OldInfoOutlet.placeholder = IsForAccount ? "舊帳號" : "舊密碼"
         NewInfoOutlet.placeholder = IsForAccount ? "新帳號" : "新密碼"
         ReNewInfoOutlet.isHidden = IsForAccount
+        if IsForAccount == false{
+            OldInfoOutlet.isSecureTextEntry = true
+            NewInfoOutlet.isSecureTextEntry = true
+            ReNewInfoOutlet.isSecureTextEntry = true
+        }
     }
     
     @IBAction func donePressed(_ sender: UIButton) {
